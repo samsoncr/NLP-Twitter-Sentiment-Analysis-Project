@@ -47,6 +47,9 @@ def main():
 
             nums: List[str] = data.split(',')
             feature_vector: List[float] = [float(x) for x in nums]
+
+            xtrain.append(np.asarray(feature_vector))
+            ytrain.append(np.asarray([label]))
             
             if count % 5 == 0:
                 xtest.append(np.asarray(feature_vector))
@@ -57,10 +60,13 @@ def main():
         
     size = len(xtrain)
     train_size = int(size * .8)
-
-    xtrain = pad_sequences(np.asarray(xtrain), maxlen=200, padding='post')
-    xtest = pad_sequences(np.asarray(xtest), maxlen=200, padding='post')
+    #print(xtrain)
+    #xtrain = pad_sequences(np.asarray(xtrain), maxlen=200, padding='post')
+    #xtest = pad_sequences(np.asarray(xtest), maxlen=200, padding='post')
     # xtrain = tf.data.Dataset.from_tensor_slices(xtrain)
+    #print(xtrain)
+    #print(ytrain)
+    #print()
     xtrain = np.asarray(xtrain)
     xtest = np.asarray(xtest)
     ytrain = np.array(ytrain)
