@@ -1,6 +1,6 @@
 ![VCU Logo](https://ocpe.vcu.edu/media/ocpe/images/logos/bm_CollEng_CompSci_RF2_hz_4c.png)
 
-# Sentiment Analysis of Tweets
+# NLP-Twitter-Sentiment-Analysis-Project
 | Developer Name | VCU Email Address | Github Username |
 | :---: | :---: | :---: |
 | Charles Cutler | cutlerci@vcu.edu | cutlerci |
