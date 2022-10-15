@@ -7,9 +7,9 @@
 | Christopher Smith | samsoncr@vcu.edu | samsoncr |
 
 # Papers
-This directory contains papers that we read for inspiration on the topic of sentiment analysis of tweets.
+This directory contains pdf versions of the papers that we read for inspiration on the topic of sentiment analysis of tweets.
 
-| Paper Name | Paper Link |
+| Paper Name | Original Paper Download Link |
 | :-------------------: | :---: |
 | Like It Or Not: A Survey of Twitter Sentiment Analysis Methods | [Like It Or Not](https://dl.acm.org/doi/abs/10.1145/2938640) |
 | Twitter Sentiment Analysis | [Twitter Sentiment Analysis](https://www-nlp.stanford.edu/courses/cs224n/2009/fp/3.pdf) |
