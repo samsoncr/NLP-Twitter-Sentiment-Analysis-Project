@@ -1,5 +1,12 @@
-# NLP-Twitter-Sentiment-Analysis-Project
+![VCU Logo](https://ocpe.vcu.edu/media/ocpe/images/logos/bm_CollEng_CompSci_RF2_hz_4c.png)
 
+# NLP-Twitter-Sentiment-Analysis-Project
+| Developer Name | VCU Email Address | Github Username |
+| :---: | :---: | :---: |
+| Charles Cutler | cutlerci@vcu.edu | cutlerci |
+| Christopher Smith | samsoncr@vcu.edu | samsoncr |
+
+## READ ME SHOULD CONTAIN THE FOLLOWING
 o Project description
 • Detail description of exactly what your code is doing (about a 
 paragraph at minimum)
