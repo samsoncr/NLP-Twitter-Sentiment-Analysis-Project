@@ -73,12 +73,16 @@ To determine the numerical representations of tweets it is neccesary to first de
 
 The first tool is the ``embedding array``. This array consists of the individual word vectors that are in the GloVe database. A snippet of this array is shown below:
 
-![EmbeddingsArray](./EmbeddingsArray.png "Embeddings Array")
- 
+<p align="center">
+ <img src="./EmbeddingsArray.png" width="1000" height="200">
+</p>
+
  The second tool that goes right along with the first one is the ``index mapping``. This tool allows for the word in the tweets to be converted into a single dimensional numerical vector that acts and the intermediary between words and word embeddings. It contains the index location for every word that is in the Embeddings Array. For example, the word representation for ``Dogs`` might be stored in the second line in the ``Embeddings Array``. So in the ``Index Mapping`` the word ``Dogs`` would be matched with the number 2, representing its storage location in ``Embeddings Array``. A snipped of this mapping is shown below:
- 
-![IndexMapping](./IndexMapping.png "Index Mapping")
- 
+  
+<p align="center">
+ <img src="./IndexMapping.png" width="300" height="500">
+</p>
+
 To get a better idea of this process of converting a tweet of words into a numerical representation let's look at an example:
 
 ### Feature extraction and Vectorization Example	
@@ -109,7 +113,6 @@ We used the following layers:
 
 ![Layers](./Layers.png "CNN Layers")
 
-
 # Data 
 ## Original Data
 We used the Sentiment140 dataset that can be found online at: [Sentiment140](https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download)
@@ -138,18 +141,24 @@ This clean version of the dataset can be found in the Data sub-directory as "Cle
 
 We split the data set into three pieces for use in training and evaluation of the model. We use an 80% train, 10% development or validation, and 10% test split. Numerically that break down looks as follows:
 
-![DataSplitGraph](./DataSplit.png "Data Split Graph")
+<p align="center">
+ <img src="./DataSplit.png" width="600" height="600">
+</p>
 
 # Results
 The following table displays results we obtained when training the model with the entire training data subset.
+
 ![Results](./OverallResults.png "Overall Results")
 
 We were interested in how much data we actually need to train a model to do well. To investigate this we conducted an ablation study, using smaller and smaller subsets of the training data to train a model. The following sections describe the results we found. 
 ## Confusion Matrix
+
 ![ConfusionMatrix](./ConfusionMatrix.png "Confusion Matrix")
 
 ## Training Versus Validation Loss
+
 ![TrainingVsValidationLoss](./TrainingVsValidationLoss.png "Training Vs Validation Loss")
 
 ## Precision, Recall, and F1 Performance Measures
+
 ![PrecisionRecallandF1](./P_R_F1.png "Precision, Recall, and F1 Performance Measures")
