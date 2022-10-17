@@ -49,6 +49,67 @@ We then collect the predictions of our model on a test set of data, and for our 
   * What would you do next given all the time and resources in the world? 
 
 
+# Method
+## Preprocessing:
+Doing some research in the general practices for sentiment analysis we chose to do the following preprocessing steps:
+* Removal of special characters, punctuation, and digits
+* Removal of usernames and URLs 
+* Repeated Character Reduction 
+* Contraction Expansion
+* Stop word removal
+* Lemmatization
+* Capitalization removal
+
+These allowing the data from within a tweet to be more uniform and also reduce the amount of "noise" or not helpful data that gets input into the model.
+
+## Feature Extraction and Vectorization
+Once the data was cleaned it is necessary to turn the words of the tweet into a numerical representations that can be used to train a machine learning model. The steps to build these numerical representations are as follows:
+* Build some tools
+* Convert the tweets
+* Feed the input to the CNN
+
+### Build some tools: Static Word Embeddings with Glove
+To determine the numerical representations of tweets it is neccesary to first define som euseful tools. We used ``GloVe: Global Vectors for Word Representation`` to construct two tools that together can be used to convert each word found within a tweet into a numerical vector. The collection of all the individual word vectors then represent the numerical representation of a tweet. 
+
+The first tool is the ``embedding array``. This array consists of the individual word vectors that are in the GloVe database. A snippet of this array is shown below:
+
+![EmbeddingsArray](./EmbeddingsArray.png "Embeddings Array")
+ 
+ The second tool that goes right along with the first one is the ``index mapping``. This tool allows for the word in the tweets to be converted into a single dimensional numerical vector that acts and the intermediary between words and word embeddings. It contains the index location for every word that is in the Embeddings Array. For example, the word representation for ``Dogs`` might be stored in the second line in the ``Embeddings Array``. So in the ``Index Mapping`` the word ``Dogs`` would be matched with the number 2, representing its storage location in ``Embeddings Array``. A snipped of this mapping is shown below:
+ 
+![IndexMapping](./IndexMapping.png "Index Mapping")
+ 
+To get a better idea of this process of converting a tweet of words into a numerical representation let's look at an example:
+
+### Feature extraction and Vectorization Example	
+    Here is an example tweet:
+    “I like fluffy dogs”
+    
+    Given we have built the Embeddings Array and stored the locations of every word in ``Index Mappings``:
+    We could assume that the indexes of the static word embeddings, that is those numerical word representations, are:
+    
+    I : 29 
+    like: 99
+    fluffy: 746
+    dogs: 2
+    
+    So we can now build an index mapped versions of out tweet:
+    [ 29 99 746 2 ]
+    
+    Later on, when we pass Embeddings Array and our index version of the tweet into the embedding layer of the Convolutional Neural Network,
+    [ 29 99 746 2 ] turns into
+    [ [ 3.15530002e-01  5.37649989e-01  1.01769999e-01  3.25529985e-02 … 3.79800005e-03 ]
+    [ 1.53639996e-02 -2.03439996e-01  3.32940012e-01 -2.08859995e-01  … 1.00610003e-01 ]
+    [ 3.09760004e-01  5.00150025e-01 3.20179999e-01  1.35370001e-01  … 8.70389957e-03 ]
+    [ 1.91100001e-01 2.46680006e-01 -6.07520007e-02 -4.36230004e-01  … 1.93019994e-02 ] ]
+
+## Sentiment detection / Classification using machine learning
+Convolutional Neural network
+We used the following layers:
+
+![Layers](./Layers.png "CNN Layers")
+
+
 # Data 
 ## Original Data
 We used the Sentiment140 dataset that can be found online at: [Sentiment140](https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download)
