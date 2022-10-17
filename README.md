@@ -12,7 +12,13 @@ http://ecotrust-canada.github.io/markdown-toc/
 ## READ ME SHOULD CONTAIN THE FOLLOWING
 
 * Project description
-  * Detail description of exactly what your code is doing (about a paragraph at minimum)
+
+The objective of this project is to perform sentiment analysis on tweets from Twitter. Sentiment analysis is a classification problem in which our code will be able to predict the sentiment of a tweet given the text of the tweet. Sentiment is an attribute of a tweet that ranges from highly positive to highly negative; however, for the purpose of this project, sentiment is divided into two classes: positive or negative. Therefore, given any tweet, our code will label it as either positive or negative. Then we must analyze the accuracy of our model. We do this by comparing the model’s predictions to labels made by humans which are assumed to be correct.
+The model for predicting sentiment is a convolutional neural network (CNN). This is a type of machine learning algorithm. It requires two steps. First, we must preprocess a large training dataset. The data used for this project can be found in the data folder with more description in the README.md in the data folder.
+The dataset contains tweets and information about the tweets including their man-made labels. The tweets must be preprocessed before being vectorized and embedded. After its transformation, the data can then be given to the CNN which will learn from data how to predict sentiment.
+We then collect the predictions of our model on a test set of data, and for our results we calculate the precision, recall, F1, and accuracy scores of our predictions. Further detail is found in the sections below.
+
+
 * Installation instructions
   * Explicitly show how to install your code in point-by-point fashion
   * I will copy and paste the instructions onto the command line for installation
