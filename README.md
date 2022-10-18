@@ -26,7 +26,9 @@ Begin by downloading the VectorizationAndCNN.ipynb file. You can follow this tut
 
 Follow the same instructions for downloading the cleaned data set file called Cleaned_Sentiment140_Data.csv.
 
-We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads on your locall machine, upload the two files, VectorizationAndCNN.ipynb and Cleaned_Sentiment140_Data.csv, to your google drive.
+You can skip the downloads of these two files if you already have downloaded the whole project as a zip file. This can be done by clicking on the green button that says "code" in the main directory of the github page (same directory as this README), and then clicking on "Download ZIP".
+
+We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads on your local machine, upload the two files, VectorizationAndCNN.ipynb and Cleaned_Sentiment140_Data.csv, to your google drive.
 
 We will also need the glove.twitter.27B.200d.txt file. This file is too big to download, however, so copy the link to it from Charles’ Google Drive.
 
@@ -44,7 +46,7 @@ Open the VectorizationAndCNN.ipynb file in your google drive. There are two line
 
 Then click on the runtime tab, and click run all.
 
-If you chose to run the file locally, you will need to instead replace the file path names on lines 78 and 79 with the local file paths. Read through the comments at the top of the page for more details.
+If you chose to run the file locally, you will need to instead replace the file path names on lines 78 and 79 with the local file paths. This also means that you will have to download the glove.twitter.27B.200d.txt file from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. Read through the comments at the top of the page in VectorizationAndCNN.ipynb for more details on changing the path names. You can export VectorizationAndCNN.ipynb as a .py file and then run it on the command line by navigating to the directory with the file and using the command python3 VectorizationAndCNN.py.
 
 # Method
 ## Preprocessing:
