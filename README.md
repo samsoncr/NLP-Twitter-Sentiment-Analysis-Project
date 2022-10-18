@@ -9,6 +9,8 @@
 # For creating the table of contents
 http://ecotrust-canada.github.io/markdown-toc/
 
+
+# Table of Contents
 - [NLP-Twitter-Sentiment-Analysis-Project](#nlp-twitter-sentiment-analysis-project)
 - [Project description](#project-description)
 - [Installation instructions](#installation-instructions)
