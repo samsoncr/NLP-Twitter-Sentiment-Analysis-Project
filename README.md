@@ -53,7 +53,7 @@ We will also need the glove.twitter.27B.200d.txt file which can be downloaded fr
 
 You can skip the downloads of these two files if you already have downloaded the whole project as a zip file. This can be done by clicking on the green button that says "code" in the main directory of the github page (same directory as this README), and then clicking on "Download ZIP".
 
-We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads on your local machine, upload the two files, VectorizationAndCNN.ipynb and Cleaned_Sentiment140_Data.csv, to your google drive.
+We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads on your local machine, upload the two files, VectorizationAndCNN.ipynb and Cleaned_Sentiment140_Data.csv, to your google drive. Do the same for glove.twitter.27B.200d.txt either from your own downloads or the previous link. Make sure to upload them to your MyDrive folder in Google Drive.
 
 
 Incase you choose to run the code locally, you must install Python and the necessary packages for tensorflow, numpy, keras, and sklearn.
