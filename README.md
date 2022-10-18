@@ -51,7 +51,10 @@ Follow the same instructions for downloading the cleaned data set file called Cl
 
 We will also need the glove.twitter.27B.200d.txt file which can be downloaded from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. This file may be too big to download, however, so you can use this public google drive link https://drive.google.com/file/d/1R84p-LC9zun-pHflhexbrX743IlsM4P8/view?usp=sharing to upload the file to your drive. Click the link use ZIP Extractor to extract the file to Google Drive.
 
-![ZIP Extractor](./ZIP Extractor.PNG "ZIP Extractor")
+
+<p align="center">
+ <img src="./ZIP Extractor.PNG" width="1000" height="200">
+</p>
 
 You can skip the downloads of these two files if you already have downloaded the whole project as a zip file. This can be done by clicking on the green button that says "code" in the main directory of the github page (same directory as this README), and then clicking on "Download ZIP".
 
