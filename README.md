@@ -45,15 +45,20 @@ Further detail is found in the sections below.
 
 # Installation instructions
 
-Begin by downloading the VectorizationAndCNN.ipynb file. You can follow this tutorial for downloading a single file from github: https://www.wikihow.com/Download-a-File-from-GitHub
+Begin by downloading the VectorizationAndCNN.ipynb file. You can follow this tutorial for downloading a single file from github: 
+
+<small><i><a href='https://www.wikihow.com/Download-a-File-from-GitHub'>Downloading a Single File From GitHib</a></i></small>
 
 Follow the same instructions for downloading the cleaned data set file called Cleaned_Sentiment140_Data.csv.
 
-We will also need the glove.twitter.27B.200d.txt file which can be downloaded from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. This file may be too big to download, however, so you can use this public google drive link https://drive.google.com/file/d/1R84p-LC9zun-pHflhexbrX743IlsM4P8/view?usp=sharing to upload the file to your drive. Click the link and use ZIP Extractor to extract the file to Google Drive.
+We will also need the glove.twitter.27B.200d.txt file which can be downloaded from 
+<small><i><a href='https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt'>glove.twitter.27B.200d.txt</a></i></small>
+ 
+This file may be too big to download, however, so you can use this public google drive link https://drive.google.com/file/d/1R84p-LC9zun-pHflhexbrX743IlsM4P8/view?usp=sharing to upload the file to your drive. Click the link and use ZIP Extractor to extract the file to Google Drive.
 
 
 <p align="center">
- <img src="./ZIP Extractor.PNG" width="1000" height="200">
+ <img src="./ZIP Extractor.PNG" width="750" height="500">
 </p>
 
 You can skip the downloads of these two files if you already have downloaded the whole project as a zip file. This can be done by clicking on the green button that says "code" in the main directory of the github page (same directory as this README), and then clicking on "Download ZIP".
@@ -80,7 +85,7 @@ Open the VectorizationAndCNN.ipynb file in your google drive. There are two line
 
 Then click on the runtime tab, and click run all.
 
-If you chose to run the file locally, you will need to instead replace the file path names on lines 78 and 79 with the local file paths. This also means that you will have to download the glove.twitter.27B.200d.txt file from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. Read through the comments at the top of the page in VectorizationAndCNN.ipynb for more details on changing the path names. You can export VectorizationAndCNN.ipynb as a .py file and then run it on the command line by navigating to the directory containing the file and using the command: python3 VectorizationAndCNN.py.
+If you chose to run the file locally, you will need to instead replace the file path names on lines 78 and 79 with the local file paths. This also means that you will have to download the glove.twitter.27B.200d.txt file from <small><i><a href='https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt'>glove.twitter.27B.200d.txt</a></i></small>. Read through the comments at the top of the page in VectorizationAndCNN.ipynb for more details on changing the path names. You can export VectorizationAndCNN.ipynb as a .py file and then run it on the command line by navigating to the directory containing the file and using the command: python3 VectorizationAndCNN.py.
 
 # Method
 ## Preprocessing:
