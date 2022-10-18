@@ -26,7 +26,7 @@ Begin by downloading the VectorizationAndCNN.ipynb file. You can follow this tut
 
 Follow the same instructions for downloading the cleaned data set file called Cleaned_Sentiment140_Data.csv.
 
-We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads, upload the two files: VectorizationAndCNN.ipynb, and Cleaned_Sentiment140_Data.csv.
+We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads on your locall machine, upload the two files, VectorizationAndCNN.ipynb and Cleaned_Sentiment140_Data.csv, to your google drive.
 
 We will also need the glove.twitter.27B.200d.txt file. This file is too big to download, however, so copy the link to it from Charles’ Google Drive.
 
