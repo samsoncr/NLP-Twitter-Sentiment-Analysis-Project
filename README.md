@@ -33,8 +33,10 @@ We recommend using Google Colab to run the code. To do so, go to google drive at
 We will also need the glove.twitter.27B.200d.txt file. This file is too big to download, however, so copy the link to it from Charles’ Google Drive.
 
 
-Incase you choose to run the code locally, you must install the necessary packages for tensorflow, numpy, keras, and sklearn.
-Tutorials for installing these libraries can be found at these links:
+Incase you choose to run the code locally, you must install Python and the necessary packages for tensorflow, numpy, keras, and sklearn.
+Tutorials for installing Python and these libraries can be found at these links:
+
+https://realpython.com/installing-python/
 
 https://www.tensorflow.org/install 
 
@@ -50,7 +52,7 @@ Open the VectorizationAndCNN.ipynb file in your google drive. There are two line
 
 Then click on the runtime tab, and click run all.
 
-If you chose to run the file locally, you will need to instead replace the file path names on lines 78 and 79 with the local file paths. This also means that you will have to download the glove.twitter.27B.200d.txt file from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. Read through the comments at the top of the page in VectorizationAndCNN.ipynb for more details on changing the path names. You can export VectorizationAndCNN.ipynb as a .py file and then run it on the command line by navigating to the directory with the file and using the command python3 VectorizationAndCNN.py.
+If you chose to run the file locally, you will need to instead replace the file path names on lines 78 and 79 with the local file paths. This also means that you will have to download the glove.twitter.27B.200d.txt file from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. Read through the comments at the top of the page in VectorizationAndCNN.ipynb for more details on changing the path names. You can export VectorizationAndCNN.ipynb as a .py file and then run it on the command line by navigating to the directory containing the file and using the command: python3 VectorizationAndCNN.py.
 
 # Method
 ## Preprocessing:
