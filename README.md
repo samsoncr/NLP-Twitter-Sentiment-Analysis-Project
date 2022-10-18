@@ -30,11 +30,21 @@ We recommend using Google Colab to run the code. To do so, go to google drive at
 
 We will also need the glove.twitter.27B.200d.txt file. This file is too big to download, however, so copy the link to it from Charles’ Google Drive.
 
+
+Incase you choose to run the code locally, you must install the necessary packages for tensorflow, numpy, keras, and sklearn.
+Tutorials for installing these libraries can be found at these links:
+https://www.tensorflow.org/install 
+https://numpy.org/install/ 
+https://www.tutorialspoint.com/keras/keras_installation.htm 
+https://scikit-learn.org/stable/install.html 
+
 # Usage instructions
 
 Open the VectorizationAndCNN.ipynb file in your google drive. There are two lines of code that need to be uncommented before running in Google Colab. These are lines 26 and 27. You can also read through the comments for more guidance through this process.
 
 Then click on the runtime tab, and click run all.
+
+If you chose to run the file locally, you will need to instead replace the file path names on lines 78 and 79 with the local file paths. Read through the comments at the top of the page for more details.
 
 # Method
 ## Preprocessing:
