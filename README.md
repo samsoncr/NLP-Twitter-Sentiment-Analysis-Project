@@ -49,11 +49,13 @@ Begin by downloading the VectorizationAndCNN.ipynb file. You can follow this tut
 
 Follow the same instructions for downloading the cleaned data set file called Cleaned_Sentiment140_Data.csv.
 
-We will also need the glove.twitter.27B.200d.txt file which can be downloaded from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. This file may be too big to download, however, so you can use this public google drive link https://drive.google.com/file/d/1R84p-LC9zun-pHflhexbrX743IlsM4P8/view?usp=sharing to upload the file to your drive.
+We will also need the glove.twitter.27B.200d.txt file which can be downloaded from https://www.kaggle.com/datasets/fullmetal26/glovetwitter27b100dtxt. This file may be too big to download, however, so you can use this public google drive link https://drive.google.com/file/d/1R84p-LC9zun-pHflhexbrX743IlsM4P8/view?usp=sharing to upload the file to your drive. Click the link use ZIP Extractor to extract the file to Google Drive.
+
+![ZIP Extractor](./ZIP Extractor.PNG "ZIP Extractor")
 
 You can skip the downloads of these two files if you already have downloaded the whole project as a zip file. This can be done by clicking on the green button that says "code" in the main directory of the github page (same directory as this README), and then clicking on "Download ZIP".
 
-We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads on your local machine, upload the two files, VectorizationAndCNN.ipynb and Cleaned_Sentiment140_Data.csv, to your google drive. Do the same for glove.twitter.27B.200d.txt either from your own downloads or the previous link. Make sure to upload them to your MyDrive folder in Google Drive.
+We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads on your local machine, upload the two files, VectorizationAndCNN.ipynb and Cleaned_Sentiment140_Data.csv, to your google drive. Do the same for glove.twitter.27B.200d.txt either from your own downloads or the previous link. Make sure they are uploaded to your MyDrive folder in Google Drive.
 
 
 Incase you choose to run the code locally, you must install Python and the necessary packages for tensorflow, numpy, keras, and sklearn.
