@@ -6,10 +6,31 @@
 | Charles Cutler | cutlerci@vcu.edu | cutlerci |
 | Christopher Smith | samsoncr@vcu.edu | samsoncr |
 
-# WHEN WE ARE READY TO MAKE A TABLE OF CONTENTS
+# For creating the table of contents
 http://ecotrust-canada.github.io/markdown-toc/
 
-## READ ME SHOULD CONTAIN THE FOLLOWING
+- [NLP-Twitter-Sentiment-Analysis-Project](#nlp-twitter-sentiment-analysis-project)
+- [Project description](#project-description)
+- [Installation instructions](#installation-instructions)
+- [Usage instructions](#usage-instructions)
+- [Method](#method)
+  * [Preprocessing:](#preprocessing-)
+  * [Feature Extraction and Vectorization](#feature-extraction-and-vectorization)
+    + [Build some tools: Static Word Embeddings with Glove](#build-some-tools--static-word-embeddings-with-glove)
+    + [Feature extraction and Vectorization Example](#feature-extraction-and-vectorization-example)
+  * [Sentiment detection / Classification using machine learning](#sentiment-detection---classification-using-machine-learning)
+- [Data](#data)
+  * [Original Data](#original-data)
+  * [Cleaned Data](#cleaned-data)
+- [Results](#results)
+  * [Confusion Matrix](#confusion-matrix)
+  * [Training Versus Validation Loss](#training-versus-validation-loss)
+  * [Precision, Recall, and F1 Performance Measures](#precision--recall--and-f1-performance-measures)
+- [Discussion](#discussion)
+- [Future Work](#future-work)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 # Project description
 
