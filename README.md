@@ -35,9 +35,13 @@ We will also need the glove.twitter.27B.200d.txt file. This file is too big to d
 
 Incase you choose to run the code locally, you must install the necessary packages for tensorflow, numpy, keras, and sklearn.
 Tutorials for installing these libraries can be found at these links:
+
 https://www.tensorflow.org/install 
+
 https://numpy.org/install/ 
+
 https://www.tutorialspoint.com/keras/keras_installation.htm 
+
 https://scikit-learn.org/stable/install.html 
 
 # Usage instructions
