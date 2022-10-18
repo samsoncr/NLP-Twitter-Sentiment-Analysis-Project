@@ -20,35 +20,21 @@ The whole process begins by preprocessing a large training dataset. The data use
 Further detail is found in the sections below.
 
 
-* Installation instructions
-  * Explicitly show how to install your code in point-by-point fashion
-  * I will copy and paste the instructions onto the command line for installation
-  * If you are using a jupyter notebook, please do not state “open jupyter notebook” – explain to a novice how to do this 
-* Usage instructions
-  * How do I run your code – Keep in mind I am used to running my programs on the command line and I don’t use an IDE – so how do I run your code? 
+# Installation instructions
 
-* Method 
-  * What method did you use?
-  * What feature representation(s) did you explore?
-  * What algorithm(s) did you use?
-  * A picture is worth a 1000 words
-* Data
-  * What is your data? - DONE
-  * How many labels do you have? - DONE
-  * What is your train/dev/test split? - DONE
-  * How many instances in your train/dev/test split? - DONE
-  * You can graph it. - DONE
-* Results
-  * What are the precision, recall, F1 and accuracy scores of your models? 
-  * You can put those in a graph or table
-* Discussion 
-  * Analysis of your results
-  * What worked?
-  * What didn’t work?
-  * Why? 
-* Future Work 
-  * What would you do next given all the time and resources in the world? 
+Begin by downloading the VectorizationAndCNN.ipynb file. You can follow this tutorial for downloading a single file from github: https://www.wikihow.com/Download-a-File-from-GitHub
 
+Follow the same instructions for downloading the cleaned data set file called Cleaned_Sentiment140_Data.csv.
+
+We recommend using Google Colab to run the code. To do so, go to google drive at drive.google.com. From your downloads, upload the two files: VectorizationAndCNN.ipynb, and Cleaned_Sentiment140_Data.csv.
+
+We will also need the glove.twitter.27B.200d.txt file. This file is too big to download, however, so copy the link to it from Charles’ Google Drive.
+
+# Usage instructions
+
+Open the VectorizationAndCNN.ipynb file in your google drive. There are two lines of code that need to be uncommented before running in Google Colab. These are lines 26 and 27. You can also read through the comments for more guidance through this process.
+
+Then click on the runtime tab, and click run all.
 
 # Method
 ## Preprocessing:
