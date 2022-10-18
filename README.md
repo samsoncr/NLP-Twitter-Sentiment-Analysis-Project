@@ -11,12 +11,13 @@ http://ecotrust-canada.github.io/markdown-toc/
 
 ## READ ME SHOULD CONTAIN THE FOLLOWING
 
-* Project description
+# Project description
 
-The objective of this project is to perform sentiment analysis on tweets from Twitter. Sentiment analysis is a classification problem in which our code will be able to predict the sentiment of a tweet given the text of the tweet. Sentiment is an attribute of a tweet that ranges from highly positive to highly negative; however, for the purpose of this project, sentiment is divided into two classes: positive or negative. Therefore, given any tweet, our code will label it as either positive or negative. Then we must analyze the accuracy of our model. We do this by comparing the model’s predictions to labels made by humans which are assumed to be correct.
-The model for predicting sentiment is a convolutional neural network (CNN). This is a type of machine learning algorithm. It requires two steps. First, we must preprocess a large training dataset. The data used for this project can be found in the data folder with more description in the README.md in the data folder.
-The dataset contains tweets and information about the tweets including their man-made labels. The tweets must be preprocessed before being vectorized and embedded. After its transformation, the data can then be given to the CNN which will learn from data how to predict sentiment.
-We then collect the predictions of our model on a test set of data, and for our results we calculate the precision, recall, F1, and accuracy scores of our predictions. Further detail is found in the sections below.
+The objective of this project is to perform sentiment analysis on tweets from Twitter. Sentiment analysis is a classification problem in which our code will be able to predict the sentiment of a tweet given the text of the tweet. Sentiment is an attribute of a tweet that ranges from highly positive to highly negative; however, for the purpose of this project, sentiment is divided into two classes: positive or negative. Therefore, given any tweet, our code will label it as either positive or negative. Then we must analyze the accuracy of our model. We do this by comparing the model’s predictions to labels made by humans which are assumed to be correct. The model for predicting sentiment is a convolutional neural network (CNN), a type of machine learning algorithm.
+
+The whole process begins by preprocessing a large training dataset. The data used for this project can be found in the Data sub directory. The dataset contains tweets and information about the tweets including their man-made labels. These tweets must be preprocessed before being vectorized and embedded. After its transformation, the data can then be given to the CNN which will learn from data how to predict sentiment. We then collect the predictions of our model on a test set of data, and for our results we calculate the precision, recall, F1, and accuracy scores of our predictions.
+
+Further detail is found in the sections below.
 
 
 * Installation instructions
@@ -162,3 +163,16 @@ We were interested in how much data we actually need to train a model to do well
 ## Precision, Recall, and F1 Performance Measures
 
 ![PrecisionRecallandF1](./P_R_F1.png "Precision, Recall, and F1 Performance Measures")
+
+# Discussion
+
+We believe our accuracy over the test set could be greatly improved. A major cause of this is that the code does not include a dropout layer in the CNN. The result is that the CNN overfits to the training set and begins to lose accuracy on our validation set after multiple epochs.
+
+The ablation study shows that our accuracy improves as the size of the training set increases. However, the gain in accuracy as well as the other scores is brought about by sacrificing run time and memory. An attempt to train our model for 15 epochs over the whole training set resulted in failure as Google Colab ran out of resources. Google Colab Pro was used afterwards, and the number of epochs was reduced to only 10 to resolve this problem.
+
+
+# Future Work
+
+Given unlimited time and resources, we would expand this project in a few ways. First, we would include early stopping to avoid overfitting. The keras library which was used for the CNN has a convenient dropout function. It does more than just stop the training when accuracy on the validation set begins to drop. It probabilistically removes, or “drops out,” inputs to a layer, which may be input variables in the data sample or activations from a previous layer.
+
+The second major expansion to this project would be to use new data. A simple framework called twitter_api_framework.py in this directory provides a way to pull tweets from twitter’s API. These tweets can be requested with a query such that retrieved tweets contain the query. Other filters are possible, but the framework needs expansion. Once that is done, we could use the framework to perform sentiment analysis on tweets relating to specific topics. The most difficult issue with pulling tweets from the Twitter API would be labelling the data. We would likely have to manually label the sentiment of new tweets.
