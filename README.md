@@ -4,7 +4,7 @@
 | Developer Name | VCU Email Address | Github Username |
 | :---: | :---: | :---: |
 | Charles Cutler | cutlerci@vcu.edu | cutlerci |
-| Christopher Smith | samsoncr@vcu.edu | samsoncr |
+| Christopher Samson | samsoncr@vcu.edu | samsoncr |
 
 # For creating the table of contents
 http://ecotrust-canada.github.io/markdown-toc/
